@@ -694,6 +694,7 @@ l   ine-height: 40px;
     display: none;
     justify-content: center;
     align-items: center;
+    padding-top: 238px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -706,7 +707,7 @@ l   ine-height: 40px;
 
 .popup-content {
     position: relative;
-    margin-top: 238px;
+    /* margin-top: 238px; */
     padding: 54px 30px;
     box-sizing: border-box;
     width: 390px;
