@@ -706,6 +706,7 @@ l   ine-height: 40px;
 
 .popup-content {
     position: relative;
+    margin-top: 238px;
     padding: 54px 30px;
     box-sizing: border-box;
     width: 390px;
