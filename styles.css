@@ -28,7 +28,7 @@ body {
 .header {
     position: relative;
     z-index: 0;
-    padding: 28px 245px 126px;
+    padding: 28px 245px 125px;
     box-sizing: border-box;
     width: 100%;
     background-color: black;
