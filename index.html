@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
    <header class="header">
         <div class="menu">
-            <a href="#0"><img src="svg/noemi-logo.svg" alt="Логотип" class="logo"></a>
+            <a href="#0" class="logo-link"><img src="svg/noemi-logo.svg" alt="Логотип" class="logo"></a>
             <nav>
+            
+                <input type="checkbox" id="nav" class="navigation-input">    
                 <ul class="navigation item">
                     <a href="" class="link">
                         <li class="navigation-items">главная</li>
@@ -26,9 +28,12 @@
                         <li class="navigation-items">контакты</li>
                     </a>
                 </ul>
+                <label for="nav">
+                <svg class="svg-burger" xmlns="http://www.w3.org/2000/svg" fill="white" x="0px" y="0px" viewBox="0 0 50 50"><path d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z"></path></svg>
+                </label>
             </nav>
         </div>
-         <h1 class="title">блог о творчестве, спорте,<br>и образе жизни</h1>
+         <h1 class="title">блог о творчестве, спорте, и образе жизни</h1>
    </header>
    <section class="trends">
         <a href="#0" class="link"><h2 class="trends-title section-title">Сейчас в тренде</h2></a>
@@ -44,7 +49,7 @@
                             <li class="category-items">interior</li>
                         </a>
                     </ul>
-                    <a href="link" class="link"><h3 class="trends-block-title">Cейчас в тренде: сад на подоконнике</h3></a>
+                    <a href="#0" class="link"><h3 class="trends-block-title">Cейчас в тренде: сад на подоконнике</h3></a>
                 </div>
             </div>
             <div class="trends-block">
@@ -55,7 +60,7 @@
                             <li class="category-items">food</li>
                         </a>
                     </ul>
-                    <a href="link" class="link"><h3 class="trends-block-title">сыры на красивых картинках из интернета: какие они на вкус</h3></a>
+                    <a href="#0" class="link"><h3 class="trends-block-title">сыры на красивых картинках из интернета: какие они на вкус</h3></a>
                 </div>
             </div>
             <div class="trends-block">
@@ -69,7 +74,7 @@
                             <li class="category-items">travel</li>
                         </a>
                     </ul>
-                    <a href="link" class="link"><h3 class="trends-block-title">собираемся в первых поход в горы</h3></a>
+                    <a href="#0" class="link"><h3 class="trends-block-title">собираемся в первых поход в горы</h3></a>
                 </div>
             </div>    
             <div class="trends-block">
@@ -83,7 +88,7 @@
                             <li class="category-items">health</li>
                         </a>
                     </ul>
-                    <a href="link" class="link"><h3 class="trends-block-title">сейчас в тренде: суольуо витамина в лимонах?</h3></a>
+                    <a href="#0" class="link"><h3 class="trends-block-title">сейчас в тренде: сколько витамина в лимонах?</h3></a>
                 </div>
             </div>
         </div>   
@@ -126,7 +131,7 @@
                 <ul class="category item">
                     <a href="#0" class="link"><li class="category-items">music</li></a>
                 </ul>
-                <a href="#0" class="link"><h2 class="news-title">10 мест, ради которых стоит проснутся на рассвете</h2></a>
+                <a href="#0" class="link"><h2 class="news-title">лучшие музыкальные фестивали этого лета</h2></a>
                 <div class="dataandauthor">
                     <time class="data">10 июня 2019</time>
                     <span class="author">Неизвестный автор</span>
@@ -172,7 +177,7 @@
                 <a href="#0" class="link">
                    <h2 class="sidebar-title latepost-title">Новые посты</h2>
                 </a>
-                <article class="postlist">
+                <article class="postlist postlist-first">
                     <img class="postlist-pic" src="images/last-post-sm1.jpg" alt="Пляж">
                     <div class="postlist-content">
                         <time class="data">14 июня 2019</time>
@@ -261,7 +266,7 @@
                 </a>
                 <ul class="topic-item item">
                     <a href="#0" class="link">
-                        <li class="topic-items">Красота<sup>12</sup></sup></li>
+                        <li class="topic-items topic-items-first">Красота<sup>12</sup></sup></li>
                     </a><a href="#0" class="link">
                         <li class="topic-items">Здоровье<sup>3</sup></li>
                     </a><a href="#0" class="link">
@@ -278,7 +283,7 @@
         </aside>
     </div> 
     <section class="shop">
-        <a href="#0" class="link"><h2 class="shop-title section-title">Сейчас в тренде</h2></a>
+        <a href="#0" class="link"><h2 class="shop-title section-title">Наши изделия</h2></a>
         <div class="shop-container">
             <div class="product">
                 <img src="images/last-post5.jpg" alt="Подушка" class="product-pic">
@@ -315,7 +320,7 @@
                 <img src="images/shop-post3.jpg" alt="Шестиугольная рамка" class="product-pic">
                 <div class="product-content">
                     <h3 class="product-title">шестиугольная рамка</h3>
-                    <p class="product-text">Необычная рамка для украшения дома из видео <a href="#0" class="link"><span class="text-link">&#34Как сделать рамку из подручных средств за 30 минут&#34</span></a></p>
+                    <p class="product-text">Необычная рамка для украшения дома из видео <a href="#0" class="link"><span class="text-link">&#171Как сделать рамку из подручных средств за 30 минут&#187</span></a></p>
                     <div class="product-footer">
                         <div class="product-price">
                             <p class="price">500 р</p>
@@ -347,14 +352,15 @@
             </label>
             <a href="#0" class="link"><h2 class="popup-title section-title">ваш фидбек</h2></a>
             <form action="#0">
-                <label>
-                    <p>Как часто вы заходите на сайт?</p> 
+                <label class="label-select">
+                    <p class="text-select">Как часто вы заходите на сайт?</p> 
                     <select class="select">
                         <option class="option">Почти каждый день</option>
                         <option class="option">Раз в несколько дней</option>
                         <option class="option">Несколько раз в год</option>
                     </select>  
-                <p>Вы полписаны на e-mail рассылку?</p>
+                </label>
+                <p class="text-radio-group">Вы полписаны на e-mail рассылку?</p>
                 <label class="radio-group">
                     <input class="input-radio" type="radio" name="подписка">
                     <span class="radio-text">Да</span>
@@ -364,8 +370,8 @@
                     <span class="radio-text">Нет</span>
                 </label>
                 <label>
-                    <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-                    <input class="input-text" type="text" placeholder="Может, больше рецептов?">
+                    <p class="text-textarea">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+                    <textarea class="textarea" placeholder="Может, больше рецептов?"></textarea>
                 </label>
                 <button class="popup-btn btn">
                     <span class="popup-btn-name name-btn">Oтправить</span>
