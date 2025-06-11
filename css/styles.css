@@ -119,19 +119,13 @@ nav {
 .section-title {
     margin: 55px auto 28px;
     font-size: 20px;
-    text-align: center;
-}
-
-.section-title-link {
     text-transform: uppercase;
-    text-decoration: none;
     color: #0f0d0e;
     font-weight: 700;
     font-family: "Open Sans";
-    text-align: center;
-}
+    text-align: center;}
 
-.section-title-link::after {
+.section-title::after {
     content: '';
     display: block;
     margin: 7px auto;
@@ -326,9 +320,6 @@ nav {
 .sidebar-title {
     margin-top: 0px;
     font-size: 14px;
-}
-
-.sidebar-title-link {
     text-transform: uppercase;
     text-decoration: none;
     color: #0f0d0e;
@@ -336,7 +327,7 @@ nav {
     font-family: "Open Sans";
 }
 
-.sidebar-title-link::after {
+.sidebar-title::after {
     content: "";
     margin: 9px auto 0;
     display: block;
