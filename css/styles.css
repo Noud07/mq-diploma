@@ -802,6 +802,7 @@ nav {
 .text-select {
     margin-top: 14px;
     margin-bottom: 0;
+    display: block;
     font-size: 13px;
     line-height: 40px;
     color: #000000;
@@ -844,6 +845,7 @@ nav {
 .text-radio-group {
     margin-top: 27px;
     margin-bottom: 2px;
+    display: block;
     font-size: 13px;
     color: #000000;
     font-weight: 400;
@@ -884,6 +886,7 @@ nav {
 
 .text-textarea {
     margin-top: 30px;
+    display: block;
     line-height: 1.2;
     font-size: 13px;
     color: #000000;
@@ -892,14 +895,16 @@ nav {
 }
 
 .textarea {
+    margin-top: 12px;
+    padding: 14px 20px;
     display: block;
     box-sizing: border-box;
-    padding: 14px 20px;
     width: 330px;
     height: 130px;
     background-color: #f3f7f6;
     border: none;
     outline: none;
+    resize: none;
     -moz-appearance: none;
     -webkit-appearance: none;
 }
@@ -1318,7 +1323,7 @@ nav {
     }
 
     .popup-content {
-        padding: 27px 24px;
+        padding: 23px 24px;
         width: 330px;
     }
 
