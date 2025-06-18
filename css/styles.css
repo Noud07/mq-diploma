@@ -1178,7 +1178,7 @@ nav {
     }
 
     .trends-block {
-        padding: 68px 0 17px;
+        padding: 68px 14px 17px;
         width: 100%;
         min-height: 233px;
     }
@@ -1189,8 +1189,7 @@ nav {
     }
 
     .trends-contant {
-        padding-top: 27px;
-        padding-bottom: 5px;
+        padding: 27px 19px 5px;
         width: 100%;
     }
 
