@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Open Sans";
-    src: url("fonts/fonts/OpenSans-Regular.ttf");
-    src: url("fonts/OpenSans-Regular.woff");
-    src: url("fonts/OpenSans-Regular.woff2");
+    src: url("../fonts/OpenSans-Regular.ttf");
+    src: url("../fonts/OpenSans-Regular.woff");
+    src: url("../fonts/OpenSans-Regular.woff2");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url("fonts/OpenSans-Bold.ttf");
-    src: url("fonts/OpenSans-Bold.woff");
-    src: url("fonts/OpenSans-Bold.woff2");
+    src: url("../fonts/OpenSans-Bold.ttf");
+    src: url("../fonts/OpenSans-Bold.woff");
+    src: url("../fonts/OpenSans-Bold.woff2");
     font-weight: 700;
 }
 
@@ -27,7 +27,7 @@ body {
 .header {
     position: relative;
     z-index: 0;
-    padding: 28px 14.759% 125px;
+    padding: 28px 0 125px;
     box-sizing: border-box;
     width: 100%;
     background-color: black;
@@ -50,18 +50,20 @@ body {
 }
 
 .menu {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    width: 70.482%;
 }
 
 .logo {
-    margin-left: 3px;
     width: 179px;
 }
 
 .item {
     display: flex;
     list-style: none;
+    margin: 0;
     padding-left: 0;
 }
 
@@ -74,6 +76,7 @@ body {
 
 nav {
     display: flex;
+    align-items: center;
 }
 
 .navigation-input {
@@ -81,7 +84,6 @@ nav {
 }
 
 .navigation {
-    margin: 13px 0;
     gap: 35px;
 
 }
@@ -101,7 +103,7 @@ nav {
 
 .title {
     margin: 100px auto 0;
-    padding: 0 220px;
+    width: 730px;
     font-size: 45px;
     line-height: 75px;
     text-transform: uppercase;
@@ -145,9 +147,29 @@ nav {
     position: relative;
     display: flex;
     align-items: end;
-    padding: 137px 20px 16px;
+    padding: 16px 20px;
+    min-height: 318px;
     box-sizing: border-box;
     width: calc(25% - 3px);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block1 {
+    background-image: url("../images/layer1.jpg");
+}
+
+.block2 {
+    background-image: url("../images/layer4.jpg");
+}
+
+.block3 {
+    background-image: url("../images/layer3.jpg");
+}
+
+.block4 {
+    background-image: url("../images/layer2.jpg");
 }
 
 .trends-block::before {
@@ -180,7 +202,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 34px 33px 13px;
-    background-color: rgba(0,0,0,0);
+    /* background-color: rgba(0,0,0); */
     border: 3px solid #b59f5b;
     
 }
@@ -225,7 +247,7 @@ nav {
 
 .container {
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 63px 0;
     display: flex;
     box-sizing: border-box;
     max-width: 1170px;
@@ -240,22 +262,18 @@ nav {
 .news {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 27px;
     width: 100%;
 }
 
 .news:nth-of-type(n+2) {
-    margin-top: 54px;
+    margin-top: 59px;
 }
 
 .news-pic {
-    margin-top: 4px;
     min-width: calc(51.49% - 15px);   /* 381/773*100 = 49,288  30/2 = 15 */
     background-color: #eff6f1;
-}
-
-.news-content {
-    width: calc(50.712% - 15px);   /* 392/773*100 = 50,712 30/2 = 15 */
 }
 
 .news-title {
@@ -277,11 +295,10 @@ nav {
 }
 
 .dataandauthor {
-    padding-top: 9px;
+    margin-top: 24px;
 }
 
 .data {
-    margin-right: 10px;
     font-size: 12px;
     color: #888888;
     font-weight: 400;
@@ -289,6 +306,7 @@ nav {
 }
 
 .author {
+    margin-left: 10px;
     font-size: 12px;
     color: #000000;
     font-weight: 700;
@@ -309,7 +327,7 @@ nav {
 }
 
 .sidebar {
-    min-width: 271px;
+    max-width: 271px;
 }
 
 .latepost {
@@ -341,21 +359,19 @@ nav {
     gap: 18px;
 }
 
-.postlist-first {
+.postlist {
     margin-top: 27px;
 }
 
 .postlist:nth-of-type(n+2) {
-    margin-top: 21px; 
+    margin-top: 22px; 
 }
 
 .postlist-content {
-    width: 183px;
     text-align: left;
 }
 
 .postlist-pic {
-    mask-type: 1px;
     min-width: 70px;
     height: 70px;
     background-color: #f4f7f6;
@@ -398,7 +414,8 @@ nav {
 
 .postlist-search-text {
     padding: 17px;
-    width: 270px;
+    padding-right: 34px;
+    width: 100%;
     height: 48px;
     background-color: #f4f7f6;
     border: none;
@@ -435,15 +452,11 @@ nav {
     text-align: center;
 }
 
-.subscribe-form {
-    width: 271px;
-}
-
 .subscribe-email-text {
     margin-top: 12px;
     padding-left: 17px;
     box-sizing: border-box;
-    width: 270px;
+    width: 100%;
     height: 48px;
     background-color: #f3f7f5;
     border: none;
@@ -465,7 +478,7 @@ nav {
 
 .btn {
     margin-top: 18px;
-    width: 270px;
+    width: 100%;
     height: 48px;
     font-size: 14px;
     text-transform: uppercase;
@@ -482,7 +495,6 @@ nav {
 
 .tags {
     margin-top: 56px;
-    width: 270px;
     text-align: center;
 }
 
@@ -492,7 +504,7 @@ nav {
     row-gap: 0px;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 23px;
+    margin-top: 19px;
     padding: 0 3px 0 0;
 }
 
@@ -501,7 +513,6 @@ nav {
     margin-top: 6px;
     padding: 3px 14px;
     font-size: 12px;
-    background-color: rgba(244, 243, 241, 0);
     border: 3px solid #eeeeee;
 }
 
@@ -540,17 +551,16 @@ nav {
     font-family: "Open Sans";
 }
 
-.topic-items-first {
-    margin-top: -8px;
-}
-
 .topic-items-link:hover {
     color: #b59f5b;
 }
 
-.topic-items sup {
+.sup {
     font-size: 12px;
     color: #b59f5b;
+    vertical-align: super;
+    font-weight: 700;
+    font-family: "Open Sans";
 }
 
 .shop {
@@ -587,7 +597,7 @@ nav {
 }
 
 .product-content {
-    margin-top: -3px;
+    margin-top: -10px;
     padding-top: 25px;
     outline: 3px solid #b59f5b;
     outline-offset: 20px;
@@ -655,16 +665,6 @@ nav {
     font-family: "Open Sans";
 }
 
-.rub {
-	border-bottom: 0.09em solid;
-	line-height: 0.4em;
-	display: inline-block;
-	width: 0.5em;
-    color: #0f0d0e;
-    font-weight: 700;
-    font-family: "Open Sans";
-}
-
 .product-btn {
     width: 140px;
     height: 48px;
@@ -691,7 +691,7 @@ nav {
 }
 
 .social {
-    margin-top: 90px;
+    margin-top: 96px;
     padding: 25px 0 25px 0;
     text-align: center;
     background-color: #f4f7f6;
@@ -704,13 +704,14 @@ nav {
 
 .social-items {
     display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
+}
+
+.social-items:nth-child(n+2) {
+    margin-left: 19px;
 }
 
 .social-link {
     display: inline-block;
-    padding: 5px;
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
@@ -732,7 +733,7 @@ nav {
 
 .copyright {
     display: block;
-    margin: 68px auto 44px;
+    margin: 71px auto 44px;
     background-color: white;
     text-align: center;   
     text-decoration: none; 
@@ -742,20 +743,12 @@ nav {
     font-family: "Open Sans";
 }
 
-.popup-toggle {
-    display: none;
-}
-
-.popup-toggle:checked + .popup {
-    display: flex;
-}
-
 .popup {
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -786,8 +779,15 @@ nav {
     position: absolute;
     top: -24px;
     right: 0;
+
+}
+
+.popup-close-btn {
     width: 18px;
     height: 18px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../svg/form-x.svg");
 }
 
 .text-select {
@@ -919,7 +919,11 @@ nav {
 
 @media (max-width: 1200px) {
     .header {
-        padding: 45px 34px 113px;
+        padding: 45px 0 113px;
+    }
+
+    .menu {
+        width: 91.482%;
     }
 
     .logo {
@@ -942,7 +946,7 @@ nav {
 
     .title {
         margin-top: 80px;
-        padding: 0px 25px;
+        width: 611px;
         font-size: 40px;
         line-height: 55px;
     }
@@ -961,7 +965,7 @@ nav {
         width: calc(50% - 3px);
         padding-top: 72px;
         padding-bottom: 17px;
-        aspect-ratio: 381 / 247;
+        min-height: 250px;
     }
 
     .category-items-link {
@@ -980,11 +984,8 @@ nav {
 
     .news {
         flex-direction: column;
+        align-items: normal;
         gap: 13px;
-    }
-
-    .news-content {
-        width: 100%;
     }
 
     .news-title {
@@ -1021,11 +1022,15 @@ nav {
         width: 90.885%;
         justify-content: center;
         padding-top: 45px;
-        padding-bottom: 23px;
+        padding-bottom: 10px;
     }
 
     .dataandauthor {
-        padding-top: 9px;
+        margin-top: 28px;
+    }
+
+    .subscribe {
+        margin-top: 54px;
     }
 
     .shop-container {
@@ -1072,6 +1077,10 @@ nav {
 
     .popup-close {
         top: -34px;
+        
+    }
+
+    .popup-close-btn {
         width: 26px;
         height: 26px;
     }
@@ -1124,7 +1133,7 @@ nav {
 
 @media (max-width: 640px){
     .header {
-        padding: 24px 16px 211px;
+        padding: 24px 0 211px;
     }
 
     .menu {
@@ -1154,7 +1163,7 @@ nav {
 
     .title {
         margin-top: 32px;
-        padding: 0 0;
+        width: 280px;
         font-size: 26px;
         line-height: 36px;
     }
@@ -1169,9 +1178,9 @@ nav {
     }
 
     .trends-block {
-        padding: 68px 14px 17px;
+        padding: 68px 0 17px;
         width: 100%;
-        aspect-ratio: 360 / 231;
+        min-height: 233px;
     }
 
     .trends-block-title-link {
@@ -1187,7 +1196,7 @@ nav {
 
     .container {
         padding-top: 42px;
-        padding-bottom: 7px;
+        padding-bottom: 27px;
         width: 91.667%;
         flex-direction: column;
     }
@@ -1211,7 +1220,7 @@ nav {
     }
 
     .dataandauthor {
-        padding-top: 6px;
+        margin-top: 10px;
     }
 
     .news-text {
@@ -1220,7 +1229,11 @@ nav {
         line-height: 20px;
     }
 
-    .sidebar, .postlist-search-text, .subscribe-form, .subscribe-email-text, .subscribe-btn, .tags, .product {
+    .sidebar {
+        max-width: 100%;
+    }
+
+    .postlist-search-text, .subscribe-form, .subscribe-email-text, .subscribe-btn, .tags, .product {
         width: 100%;
     }
 
@@ -1232,7 +1245,7 @@ nav {
         font-size: 16px;
     }
 
-    .postlist-first {
+    .postlist {
         margin-top: 24px;
     }
 
@@ -1270,6 +1283,11 @@ nav {
         gap: 2px;
     }
 
+    .topic-items {
+        padding-top: 8px;
+        padding-bottom: 16px;
+    }
+
     .shop-title {
         margin-top: 10px;
         margin-bottom: 30px;
@@ -1285,20 +1303,28 @@ nav {
         aspect-ratio: 1 / 1;
     }
 
+    .product-content {
+        margin-top: -13px;
+    }
+
     .footer {
         width: 91.667%;
     }
 
     .social {
-        margin-top: 61px;
+        margin-top: 65px;
     }
 
     .copyright {
-        margin-top: 44px;
+        margin-top: 50px;
     }
 
     .popup-close {
         top: -32px;
+        
+    }
+
+    .popup-close-btn {
         width: 28px;
         height: 28px;
     }
